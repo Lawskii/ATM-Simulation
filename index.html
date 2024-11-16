@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Bank</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="atm">
+        <h1>E-Bank</h1>
+        <div id="menu">
+            <h2>Menu</h2>
+            <button class="menu-option" data-action="withdraw">Withdraw</button>
+            <button class="menu-option" data-action="transfer">Transfer</button>
+            <button class="menu-option" data-action="check-balance">Check Balance</button>
+            <button class="menu-option" data-action="settings">Settings</button>
+        </div>
+
+        <div id="withdraw-section" class="hidden">
+            <h2>Withdraw Money</h2>
+            <label for="amount">Enter Amount:</label>
+            <input type="number" id="amount" placeholder="Enter amount in $" />
+            <button id="withdraw-btn">Withdraw</button>
+            <div class="message" id="withdraw-message"></div>
+            <button id="back-arrow">← Back to Menu</button>
+        </div>
+
+        <div id="balance-section" class="hidden">
+            <h2>Your Balance</h2>
+            <p id="balance-message"></p>
+            <button id="back-to-menu-from-balance">← Back to Menu</button>
+        </div>
+
+        <div id="withdrawal-success" class="hidden">
+            <div class="dialog-content">
+                <span class="checkmark">&#10003;</span>
+                <p>Withdrawal Successful!</p>
+                <button id="back-to-menu-from-success">← Back to Menu</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
